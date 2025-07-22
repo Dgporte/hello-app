@@ -43,7 +43,7 @@ jobs:
       - name: Checkout manifests repo
         uses: actions/checkout@v4
         with:
-          repository: <SEU_USUARIO>/hello-manifests
+          repository: dgporte/hello-manifests
           ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
           path: manifests
 
