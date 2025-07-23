@@ -49,8 +49,8 @@ graph TD
     User -->|Acessa| App[FastAPI App]
 ```
 
-- **Repositório de Código:** [hello-app](#)
-- **Repositório de Manifests:** [hello-manifests](#)
+- **Repositório de Código:** [hello-app]([#](https://github.com/Dgporte/hello-manifests))
+- **Repositório de Manifests:** [hello-manifests]([#](https://github.com/Dgporte/hello-app))
 - **Registry:** Docker Hub
 - **Orquestração:** Kubernetes local via Rancher Desktop
 - **GitOps:** ArgoCD
