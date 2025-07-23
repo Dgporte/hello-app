@@ -402,3 +402,98 @@ Siga o roteiro, adapte para sua realidade, e evolua seu pipeline sempre!
 
 **Autor:** [Dgporte](https://github.com/Dgporte)  
 **DevOps | Cloud | GitOps | Kubernetes**
+
+---
+
+# 🔥 MELHORIAS E ADIÇÕES
+
+## 🎉 Badges
+
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/Dgporte/hello-app/cicd.yaml?branch=main)
+![Docker Pulls](https://img.shields.io/docker/pulls/dgporte/hello-app)
+![License](https://img.shields.io/github/license/Dgporte/hello-app)
+
+---
+
+## ▶️ Rodando Localmente
+
+```bash
+# Com Docker
+docker run -p 8080:8080 dgporte/hello-app:latest
+
+# Ou via Uvicorn (dev)
+pip install -r requirements.txt
+uvicorn main:app --host 0.0.0.0 --port 8080
+```
+
+---
+
+## 🧰 Tabela de Tecnologias Utilizadas
+
+| Tecnologia        | Finalidade           |
+|-------------------|---------------------|
+| FastAPI           | Aplicação Web       |
+| Docker            | Containerização     |
+| GitHub Actions    | CI/CD Pipeline      |
+| Kubernetes        | Orquestração        |
+| ArgoCD            | GitOps Deploy       |
+| Rancher Desktop   | Cluster Local       |
+
+---
+
+## ❓ FAQ
+
+**Posso usar em nuvem?**  
+Sim, basta apontar o ArgoCD para seu cluster remoto.
+
+**Como mudar a porta da aplicação?**  
+Altere no Dockerfile e nos YAMLs de deployment/service.
+
+**Posso usar com outra linguagem?**  
+Sim, adapte o Dockerfile e workflow para sua stack!
+
+---
+
+## 🛠️ Exemplos de Troubleshooting
+
+```bash
+# Ver logs do pod
+kubectl logs <nome-do-pod>
+
+# Reaplicar manifests
+kubectl apply -f deployment.yaml
+```
+
+---
+
+## 🤝 Contribuindo
+
+Pull requests são bem-vindos!  
+Abra issues para sugestões ou problemas.
+
+---
+
+## 📚 Links Úteis
+
+- [FastAPI Docs](https://fastapi.tiangolo.com/)
+- [Docker Docs](https://docs.docker.com/)
+- [Kubernetes Docs](https://kubernetes.io/docs/)
+- [ArgoCD Docs](https://argo-cd.readthedocs.io/en/stable/)
+- [Rancher Desktop Docs](https://docs.rancherdesktop.io/)
+
+---
+
+## ⏱️ Tempo Estimado por Etapa
+
+- Criar repositórios: 2min
+- Gerar Token Docker Hub: 2min
+- Gerar Chave SSH: 2min
+- Configurar Secrets: 2min
+- Criar app/Dockerfile: 5min
+- Configurar Actions: 5min
+- Criar manifests: 3min
+- Instalar Rancher/ArgoCD: 10min
+- Configurar App ArgoCD: 3min
+- Validar deploy: 5min
+
+---
