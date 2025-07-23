@@ -231,7 +231,7 @@ spec:
         - name: hello-app
           image: dgporte/hello-app:latest # será atualizado automaticamente
           ports:
-            - containerPort: 8080
+            - containerPort: 8080 # ou 8080, conforme seu Dockerfile
 ```
 
 **service.yaml**
