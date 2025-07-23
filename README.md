@@ -483,17 +483,3 @@ Abra issues para sugestões ou problemas.
 
 ---
 
-## ⏱️ Tempo Estimado por Etapa
-
-- Criar repositórios: 2min
-- Gerar Token Docker Hub: 2min
-- Gerar Chave SSH: 2min
-- Configurar Secrets: 2min
-- Criar app/Dockerfile: 5min
-- Configurar Actions: 5min
-- Criar manifests: 3min
-- Instalar Docker Desktop/ArgoCD: 10min
-- Configurar App ArgoCD: 3min
-- Validar deploy: 5min
-
----
