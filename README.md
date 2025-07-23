@@ -1,6 +1,6 @@
 # CI/CD Completo com GitHub Actions, Docker Hub, ArgoCD e Kubernetes Local
 
-Este projeto demonstra um pipeline **CI/CD de ponta a ponta**, integrando as melhores práticas modernas de DevOps para automação total do build, deploy e atualização de uma aplicação FastAPI em Kubernetes local via Rancher Desktop e ArgoCD.
+Este projeto demonstra um pipeline **CI/CD de ponta a ponta**, integrando as melhores práticas modernas de DevOps para automação total do build, deploy e atualização de uma aplicação FastAPI em Kubernetes local via Docker Desktop e ArgoCD.
 - **Manifests Kubernetes para ArgoCD:** [https://github.com/Dgporte/hello-manifests](https://github.com/Dgporte/hello-manifests)
 
 ---
@@ -28,7 +28,7 @@ Este projeto demonstra um pipeline **CI/CD de ponta a ponta**, integrando as mel
   - [5. Criar FastAPI, Dockerfile e requirements](#5-criar-fastapi-dockerfile-e-requirements)
   - [6. Configurar CI/CD com GitHub Actions](#6-configurar-cicd-com-github-actions)
   - [7. Criar Manifests Kubernetes](#7-criar-manifests-kubernetes)
-  - [8. Instalar Rancher Desktop e ArgoCD](#8-instalar-rancher-desktop-e-argocd)
+  - [8. Instalar Docker Desktop e ArgoCD](#8-instalar-docker-desktop-e-argocd)
   - [9. Configurar App no ArgoCD](#9-configurar-app-no-argocd)
   - [10. Validar Deploy: Prints e Testes](#10-validar-deploy-prints-e-testes)
 - [Resumo Visual do Workflow](#resumo-visual-do-workflow)
@@ -52,7 +52,7 @@ graph TD
 - **Repositório de Código:** [hello-app](https://github.com/Dgporte/hello-app)
 - **Repositório de Manifests:** [hello-manifests](https://github.com/Dgporte/hello-manifests)
 - **Registry:** Docker Hub
-- **Orquestração:** Kubernetes local via Rancher Desktop
+- **Orquestração:** Kubernetes local via Docker Desktop
 - **GitOps:** ArgoCD
 
 ---
@@ -252,11 +252,11 @@ spec:
 
 ---
 
-### 8. Instalar Rancher Desktop e ArgoCD
+### 8. Instalar Docker Desktop e ArgoCD
 
-- **Rancher Desktop:**  
-  [Download e instalação](https://rancherdesktop.io/)
-  - Habilite Kubernetes e aguarde o cluster subir.
+- **Docker Desktop:**  
+  [Download e instalação](https://www.docker.com/products/docker-desktop/)
+  - Habilite Kubernetes no Docker Desktop e aguarde o cluster subir.
 - **kubectl:**  
   Verifique:  
   ```bash
@@ -389,7 +389,7 @@ curl http://localhost:8080/
 - [Documentação GitHub Actions](https://docs.github.com/actions)
 - [Docker Hub Access Tokens](https://docs.docker.com/docker-hub/access-tokens/)
 - [ArgoCD getting started](https://argo-cd.readthedocs.io/en/stable/getting_started/)
-- [Rancher Desktop](https://docs.rancherdesktop.io/)
+- [Docker Desktop](https://docs.docker.com/desktop/)
 
 ---
 
@@ -437,7 +437,7 @@ uvicorn main:app --host 0.0.0.0 --port 8080
 | GitHub Actions    | CI/CD Pipeline      |
 | Kubernetes        | Orquestração        |
 | ArgoCD            | GitOps Deploy       |
-| Rancher Desktop   | Cluster Local       |
+| Docker Desktop    | Cluster Local       |
 
 ---
 
@@ -479,7 +479,7 @@ Abra issues para sugestões ou problemas.
 - [Docker Docs](https://docs.docker.com/)
 - [Kubernetes Docs](https://kubernetes.io/docs/)
 - [ArgoCD Docs](https://argo-cd.readthedocs.io/en/stable/)
-- [Rancher Desktop Docs](https://docs.rancherdesktop.io/)
+- [Docker Desktop Docs](https://docs.docker.com/desktop/)
 
 ---
 
@@ -492,7 +492,7 @@ Abra issues para sugestões ou problemas.
 - Criar app/Dockerfile: 5min
 - Configurar Actions: 5min
 - Criar manifests: 3min
-- Instalar Rancher/ArgoCD: 10min
+- Instalar Docker Desktop/ArgoCD: 10min
 - Configurar App ArgoCD: 3min
 - Validar deploy: 5min
 
